@@ -1,24 +1,39 @@
-<style>
-        h1 {
-            color :orange;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 65px;
-            ;
-        }
+h1 { 
+    color :orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 65px;
+    
+}
 
-        body{
-            background-color:antiquewhite;
-            font-size: 16px;
-        }
+body{
+    background-color:antiquewhite;
+    font-size: 16px;
+}
 
-        p { 
-            background-color:green;
-            font-weight: 600;
-        }
+p { 
+    Font-weight: 600;
+    font-size: 48px;
+}
         
-        ul{
-            background-color: red;
-            font-style: italic;
-            text-decoration: solid;
-        }
-    </style>
+ul{
+    background-color: red;
+    font-style: italic;
+    text-decoration: solid;
+    text-align: center;
+    line-height: 30px;
+}
+.cor{
+    background-color: aquamarine;
+}
+
+.amarelo{
+    background-color: yellow;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.marrom{
+    background-color: brown;
+}
