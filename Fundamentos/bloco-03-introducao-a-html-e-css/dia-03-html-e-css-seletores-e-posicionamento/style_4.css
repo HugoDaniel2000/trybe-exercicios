@@ -1,0 +1,59 @@
+ol{
+    background-color: yellow;
+}
+
+.par{
+    color: green;
+}
+
+.impar{
+    text-transform:uppercase;
+}
+
+.header1, .header{
+    color: red;
+}
+
+.header1{
+    font-size: 40px;
+    border: 1px solid black;
+}
+li{
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.azul{
+    color:blue
+}
+
+.java{
+    background-color: pink;
+}
+.over:hover, .web:hover, .dev:hover, .trybe:hover, .w3:hover{
+    font-weight: bolder;
+}  
+
+.over:hover{
+    color: orange;
+}
+.web:hover{
+    color:black
+}  
+.dev:hover{
+    color: yellow;
+}
+
+.trybe:hover{
+    color: green
+}
+
+.w3:hover{
+    color: green;
+}
+
+
+

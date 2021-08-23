@@ -1,0 +1,32 @@
+div:hover {
+    border: 1px solid black;
+}
+
+.vermelho{
+    color: red;
+}
+
+.amarelo{
+    color: yellow;
+}
+
+.laranja{
+    color: orange;
+    font-size: 20px;
+}
+
+.preto{
+    color: black;
+}
+
+.verde{
+    color: green;
+}
+
+.tag-h3{
+    background-color: aqua;
+}
+
+.impar, .tag-h3{
+    font-style: italic;
+}
