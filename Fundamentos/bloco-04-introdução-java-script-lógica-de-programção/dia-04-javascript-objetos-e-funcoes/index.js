@@ -153,6 +153,7 @@ function verifyWord(stringWord, stringEnd){
     for (let index in reverseWord && reverseEnd){
         if(reverseWord[index] !== reverseEnd[index]){
             result = false
+            break
             
         }else{
             result = true
@@ -163,4 +164,4 @@ function verifyWord(stringWord, stringEnd){
 }    
 
 
-console.log(verifyWord("trybe", "be"));
+console.log(verifyWord("trybe", "ba"));
