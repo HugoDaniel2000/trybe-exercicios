@@ -117,7 +117,7 @@ function h3Class(){;
 }
 h3Class();
 
-//tarefa 4
+//tarefa 3
  function removeSection() {
      let main = document.getElementsByTagName("main")[0];
      main.removeChild(main.childNodes[1]);
@@ -125,11 +125,26 @@ h3Class();
 }
 removeSection();
 
+//Tarefa 4
+function centerSection() {
+    let rightContent = document.getElementsByClassName("right-content")[0];
+    rightContent.style.marginRight = "auto";
+}
+centerSection();
+
+//Tarefa 5
+function coloMain() {
+    let main = document.getElementsByClassName("main-content")[0];
+    main.style.background = "green"
+}
+coloMain()
 
 
+//tarefa 6
 
-
-
-
-
-
+function removeLi() {
+    let ul = document.getElementsByTagName("ul")[0];
+    ul.removeChild(ul.childNodes[9]);
+    ul.removeChild(ul.childNodes[8]);
+}
+removeLi()
