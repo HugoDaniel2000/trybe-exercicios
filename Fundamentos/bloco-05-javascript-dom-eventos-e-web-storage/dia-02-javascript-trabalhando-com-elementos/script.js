@@ -1,3 +1,5 @@
+//                                      PARTE 1
+// tarefa 1
 function tagH1(){
     let body = document.getElementsByTagName("body")[0];
     let addH1 = document.createElement("h1");
@@ -6,6 +8,7 @@ function tagH1(){
 }
 tagH1();
 
+// tarefa 2
 function tagMain() {
     let body = document.getElementsByTagName("body")[0];
     let addMain = document.createElement("main");
@@ -14,6 +17,7 @@ function tagMain() {
 }
 tagMain();
 
+//tarefa 3
 function tagSection() {
     let main = document.getElementsByTagName("main")[0];
     let addSection = document.createElement("section")
@@ -22,6 +26,7 @@ function tagSection() {
 }
 tagSection();
 
+// tarefa 4
 function tagP() {
     let section = document.getElementsByTagName("section")[0];
     let addP = document.createElement("p")
@@ -30,6 +35,7 @@ function tagP() {
 }
 tagP();
 
+//tarefa 5
 function tagSection2() {
     let main = document.getElementsByTagName("main")[0];
     let addSection2 = document.createElement("section")
@@ -38,6 +44,7 @@ function tagSection2() {
 }
 tagSection2();
 
+//tarefa 6
 function tagSection3() {
     let main = document.getElementsByTagName("main")[0];
     let addSection3 = document.createElement("section")
@@ -46,6 +53,7 @@ function tagSection3() {
 }
 tagSection3()
 
+//tarefa 7
 function imageSection() {
     let section = document.getElementsByTagName("section")[1];
     let addImage = document.createElement("img")
@@ -55,6 +63,7 @@ function imageSection() {
 }
 imageSection();
 
+//tarefa 8
 function UlSection() {
     let section = document.getElementsByTagName("section")[2];
     let addUl = document.createElement("ul");
@@ -75,6 +84,7 @@ function Ul_Li(){
 }
 Ul_Li();
 
+// tarefa 9
 function addH3(){
     let main = document.getElementsByTagName("main")[0];
     for(let index = 0; index < 3; index +=1  ){
@@ -83,7 +93,38 @@ function addH3(){
     }
 }
 addH3();
-    
+
+
+
+
+//                          PARTE 2
+
+
+//tarefa 1
+
+function addClassH1 (){
+   let h1 = document.getElementsByTagName('h1')[0];
+    h1.className = "title";
+}
+addClassH1();
+
+// tarefa 2
+function h3Class(){;
+    let h3 = document.getElementsByTagName('h3');
+    for(let index = 0; index < 3; index += 1 ){
+        h3[index].className = "description";
+    }
+}
+h3Class();
+
+//tarefa 4
+ function removeSection() {
+     let main = document.getElementsByTagName("main")[0];
+     main.removeChild(main.childNodes[1]);
+
+}
+removeSection();
+
 
 
 
