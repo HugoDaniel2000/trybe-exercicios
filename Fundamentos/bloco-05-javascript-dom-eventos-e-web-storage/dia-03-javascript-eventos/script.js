@@ -61,16 +61,18 @@ createButton('Feriados');
 
 // Tarefa 3
 const buttonHoliday = document.querySelector('#btn-holiday');
+const color = "grey";
+const newColor = 'red';
+
 buttonHoliday.addEventListener('click',function(){
 let holiday = document.querySelectorAll('.holiday');
 for(let index =  0; index < holiday.length; index += 1){
-holiday[index].style.color = "rgb(238,238,238)";}
-}) 
-
-buttonHoliday.addEventListener('mouseout',function(){
-  let holiday = document.querySelectorAll('.holiday');
-  for(let index =  0; index < holiday.length; index += 1){
-  holiday[index].style.color = "gray";}
+  if(holiday[index].style.color === newColor){
+    holiday[index].style.color= "grey";
+  }else{
+    holiday[index].style.color ='red';
+  }
+}
 }) 
 
 
@@ -89,22 +91,15 @@ createButtonFriday('Sexta-Feira');
 const buttonFriday = document.querySelector('#btn-friday');
 buttonFriday.addEventListener('click',function(){
   let friday = document.querySelectorAll('.friday');
+  let newFriday = "SEXTA!";
+  let listFridays = [4, 11, 18, 25];
   for (let index = 0; index < friday.length; index += 1){
-  friday[index].innerHTML = "SEXTA!";}
-})
-
-buttonFriday.addEventListener('mouseout',function(){
-  let friday = document.querySelectorAll('.friday');
-  for (let index = 0; index < friday.length; index += 1){
-  if(index === 0){  
-  friday[index].innerHTML = 4;}
-  else if (index === 1){
-    friday[index].innerHTML = 11;}
-  else if (index === 2){
-    friday[index].innerHTML = 18;}
-  else if (index === 3){
-    friday[index].innerHTML = 25;
-  }  
+    if (friday[index].innerHTML !== newFriday){
+      friday[index].innerHTML = newFriday;
+    }else {
+      friday[index].innerHTML = listFridays[index];
+      
+    }
 }})
 
 // Tarefa 6
@@ -115,7 +110,7 @@ day.addEventListener('mouseover',function(event){
 })
 
 day.addEventListener('mouseout',function(event){
-  event.target.style.fontWeight = '200px';
+  event.target.style.fontWeight = '200';
   event.target.style.fontSize = '20px';
 })
 
@@ -140,13 +135,16 @@ taskColor("green")
 
 // Tarefa 9
 const task = document.querySelector('.task')
-task.addEventListener('dblclick', function(){
-  task.className = "task selected"
+let selectedTask = document.getElementsByClassName('task selected')
+task.addEventListener('click', function(event){
+  if(selectedTask.length === 0){
+  event.target.className = 'task selected'}
+  else {
+    event.target.className = 'task'
+    console.log(event);
+  }
 })
 
-task.addEventListener('click', function(){
-  task.className = 'task'
-})
 
 //Tarefa 10
 
