@@ -134,6 +134,7 @@ function taskColor(color){
 taskColor("green")
 
 // Tarefa 9
+
 const task = document.querySelector('.task')
 let selectedTask = document.getElementsByClassName('task selected')
 task.addEventListener('click', function(event){
