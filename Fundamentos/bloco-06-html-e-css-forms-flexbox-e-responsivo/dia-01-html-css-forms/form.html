@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="form-header">
+    <h1>Formulário para cadastro de currículo</h1>
+    <p>Preencha os campos abaixo.</p>
+  </header>
+  <main>
+    <form action="http://127.0.0.1:5500/form.html" method="get" id="cv-form">
+      <div class='form-row'>
+        <fieldset>
+          <div class="line-content">
+            <label for="name-form">Nome:
+              <input id="name-form" name='name' type="text" placeholder="Digite seu nome" maxlength="40" riquired>
+            </label>
+          </div>
+          <div class="line-content">
+            <label for="email-form">E-mail:
+              <input id="email-form" name="email" type="email" placeholder="Digite seu email" maxlength="50" required>
+            </label>
+          </div>  
+          <div class="line-content">
+            <label for="cpf-form">CPF:
+              <input id="cpf-form" name="cpf" type="text" placeholder="Digite seu cpf" maxlength="11" required>
+            </label>
+          </div>  
+          <div class="line-content">
+            <label for="adress-form">Endereço:
+              <input id="adress-form" name="adress" type="text" placeholder="Digite seu endereço" maxlength="200" required>
+            </label>
+          </div>  
+          <div class="line-content">  
+            <label for="city-form">Cidade:
+              <input id="city-form" name="city" type="text" placeholder="Digite sua cidade" maxlength="28" required>
+            </label>
+          </div>  
+          <div class="line-content">  
+            <label for="state-options">Estados: 
+              <select name="state" id="state-options" required>
+                <option disabled selected value>Selecione seu estado</option>
+              </select>
+            </label>
+          </div>  
+          <div class="line-content">
+            <p>Tipo de imóvel</p>  
+            <label for="tipo-form">
+              <input type="radio" name="tipo" id="tipo-form" required>
+              <span>Casa</span>
+            </label>  
+            <label for="tipo-form2">
+              <input type="radio" name="tipo" id="tipo-form2" required>
+            <span>Apartamento</span> 
+            </label>
+          </div>  
+        </fieldset>
+        <fieldset>
+          <div class="line-content">
+          <label for="resume-form">Resumo do currículo:</label>
+          <br>
+          <textarea name="curriculo" id="resume-form" cols="66" rows="20" maxlength="1000" placeholder="Digite aqui" required></textarea>
+        </div>
+        <div class="line-content">
+          <label for="cargo-form">Cargo:
+            <input type="text" name="cargo" id="cargo-form" maxlength="40" placeholder="Digite seu cargo" required>
+          </label>
+        </div>
+        <div class="line-content">
+          <label for="descricao-cargo">Descrição do cargo:
+            <input type="text" name='decript-role' id="descricao-cargo" maxlength="500" placeholder="Digite sua descrição" required>
+          </label>
+        </div>
+        <div class="line-content">
+          <label for="data-form">Data de ínicio:
+            <input type="text" class='input-data'name="date" placeholder="dd/mm/aaaa" id="data-form" required>
+          </label>
+        </div>
+        </fieldset>
+        <div id='button-content'>
+        <button class="submit-button" type="submit">Enviar</button>
+        <button class="clear-button">Limpar</button>
+        </div>  
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
