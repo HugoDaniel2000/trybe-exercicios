@@ -49,13 +49,13 @@ const picker = new Pikaday({
   }
 });
 
-new window.JustValidate('.js-form', {
+new JustValidate('.js-form', {
   
   rules: {  
     name: {
       required: true,
       minLength: 3,
-      maxLength: 40,
+      maxLength: 40
     },
     email: {
       required: true,
@@ -84,7 +84,7 @@ new window.JustValidate('.js-form', {
       required: true,
       maxLength: 1000
     },
-    role: {
+    office: {
       required: true,
       maxLength: 40
     },
@@ -94,6 +94,7 @@ new window.JustValidate('.js-form', {
     },
     date: {
       required: true,
+      format: /^\d\d\/\d\d\/\d\d\d\d$/,
     }
   },
   messages: {
@@ -129,7 +130,7 @@ new window.JustValidate('.js-form', {
       required: 'Campo obrigatório',
       maxLength: 'O limite é de 1000 caracteres.'
     },
-    role: {
+    office: {
       required: 'Campo obrigatório',
       maxLength: 'O limite é de 40 caracteres.'
     },
@@ -139,8 +140,10 @@ new window.JustValidate('.js-form', {
     },
     date: {
       required: 'Campo obrigatório',
+      format: 'Formato incorreto'
     }
   },
+  
 })
 
 
