@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+.header-img {
+  width: 70px;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
+
+.cabecalho-contain{
+  display: flex;
+  justify-content: center;
+}
+.cabecalho{
+  color: white;
+  background-color: rgb(80, 80, 80);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.h1-size{
+  font-size: 20px;
+}
+
+.section-text{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.display-flex-content{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.flex-content-1{
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  margin: 10px;
+}
+.flex-content-2{
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  margin: 10px;
+}
+
+.flex-content-children-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgb(235, 232, 232);
+  box-shadow: 3px 3px 3px;
+}
+.flex-content-children-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: rgb(235, 232, 232);
+  box-shadow: 3px 3px 3px;
+  }
+.social-flex-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
+
+.social-flex {
+  width: 100px;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+hr{
+  border: 1px solid gray;
+  background-color: gray;
+  display: flex;
+  width: 150px ;
+  justify-content: center;
+}
+
