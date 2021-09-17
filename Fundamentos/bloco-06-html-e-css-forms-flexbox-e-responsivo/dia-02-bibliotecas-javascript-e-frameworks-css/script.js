@@ -94,7 +94,6 @@ new JustValidate('.js-form', {
     },
     date: {
       required: true,
-      format: /^\d\d\/\d\d\/\d\d\d\d$/,
     }
   },
   messages: {
@@ -140,7 +139,6 @@ new JustValidate('.js-form', {
     },
     date: {
       required: 'Campo obrigatório',
-      format: 'Formato incorreto'
     }
   },
   
