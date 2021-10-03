@@ -41,7 +41,7 @@ const customerInfo = (order) => {
   return`Olá ${order.order.delivery.deliveryPerson}, entrega para: ${order.name}, Telefone:${order.phoneNumber}, R. ${order.address.street}, ${order.address.number}, AP: ${order.address.apartment}`;
 }
 
-// console.log(customerInfo(order));
+ console.log(customerInfo(order));
 
 const orderModifier = (order) => {
   // Adicione abaixo as informações necessárias. Complete a função orderModifier() para que seu retorno seja similar a "Olá Luiz Silva, o total do seu pedido de marguerita, pepperoni e Coca-Cola Zero é R$ 50,00."
@@ -93,19 +93,19 @@ const lesson3 = {
 const adicionaTurno = (objeto, chave, valor) => objeto[chave] = valor;
 
 console.log(adicionaTurno(lesson2, 'turno', 'manhã'));
-// console.log(lesson2);
+ console.log(lesson2);
 
 // 2- Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 const listaKeys = (objeto) => Object.keys(objeto);
-// console.log(listaKeys(lesson3));
+ console.log(listaKeys(lesson3));
 
 // 3- Crie uma função para mostrar o tamanho de um objeto.
 const tamanhoObjeto = (objeto) => Object.keys(objeto).length;
-// console.log(tamanhoObjeto(lesson3));
+console.log(tamanhoObjeto(lesson3));
 
 // 4- Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 const valoresObjeto = (objeto) => Object.values(objeto);
-//  console.log(valoresObjeto(lesson3));
+console.log(valoresObjeto(lesson3));
 
 // 5- Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3 . Ao executar o comando console.log(allLessons) , a saída deverá ser a seguinte:
 let newObject = {}; // objeto criado para colocar o resultado da função.
@@ -124,7 +124,7 @@ const totalAlunos = (turma1, turma2, turma3) => {
   return turma1 + turma2 + turma3
 }
 
-// console.log(totalAlunos(alunoTotal1, alunoTotal2, alunoTotal3));
+console.log(totalAlunos(alunoTotal1, alunoTotal2, alunoTotal3));
 
 // 7- Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto. Por exemplo:
 const valorChaveIndice = (objeto, number) => {
@@ -137,7 +137,6 @@ console.log(valorChaveIndice(lesson3, 0));
 const verificaPar = (objeto, key, value) => {
   let arrayRetorno = Object.entries(objeto);
   for (let index = 0; index < arrayRetorno.length; index += 1){
-    console.log(arrayRetorno[index]);
     if((arrayRetorno[index][0] === key) && (arrayRetorno[index][1] === value)) {
       return true
     }
@@ -145,4 +144,4 @@ const verificaPar = (objeto, key, value) => {
   return false
 }
 
-console.log(verificaPar(lesson3, 'materia', 'Português'));
+console.log(verificaPar(lesson3, 'materia', 'Matemática'));
