@@ -113,7 +113,7 @@ const expectedResult2 = [
     name: 'As Crônicas de Gelo e Fogo',
     genre: 'Fantasia',
     author: { name: 'George R. R. Martin', birthYear: 1948 },
-    releaseYear: 1991,
+    releaseYear: 1991,https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map|
   },
   {
     id: 5,
