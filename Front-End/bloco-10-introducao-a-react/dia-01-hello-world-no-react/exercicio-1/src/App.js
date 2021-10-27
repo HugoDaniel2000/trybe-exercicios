@@ -3,15 +3,10 @@ import './App.css';
 
 const Task = (value) => {
   return (
-    <li>{value}</li>
+    <li key={value}>{value}</li>
   );
 }
-
-const compromissos = (items) => {
-  return (
-  items.map((param) => <li>{param}</li>)
-  );
-}
+const compromissos = ['Bartolomeu', 'Hugo', 'Breno', 'Airton'];
 
 function App() {
   return (
@@ -30,8 +25,7 @@ function App() {
 
           Learn React
         </a>
-          <ol> {Task('Airton')}
-            {compromissos(["Bartolomeu", "Hugo", "Breno rei delas"])}</ol>
+          <ol> {compromissos.map((param) => Task(param))}</ol>
       </header>
     </div>
   );
