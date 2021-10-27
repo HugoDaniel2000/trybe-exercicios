@@ -1,6 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
+const Task = (value) => {
+  return (
+    <li>{value}</li>
+  );
+}
+
+const compromissos = (items) => {
+  return (
+  items.map((param) => <li>{param}</li>)
+  );
+}
+
 function App() {
   return (
     <div className="App">
@@ -11,12 +23,15 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://reactjs.org/"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          >
+
           Learn React
         </a>
+          <ol> {Task('Airton')}
+            {compromissos(["Bartolomeu", "Hugo", "Breno rei delas"])}</ol>
       </header>
     </div>
   );
